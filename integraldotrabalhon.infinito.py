@@ -1,6 +1,4 @@
 #Escrito por ABAM para calcular a integral da função retornada por "integral(x)".
-# cd C:\Users\Mônica Ataides\OneDrive\Área de Trabalho\jogo\avulsos
-# python integral.py
 
 import mpmath
 from mpmath import mp, sqrt, quad, inf, nstr
@@ -13,4 +11,5 @@ def integral(x):
 	return mp.sqrt(mp.mpf(num)/mp.mpf(den))
 
 W = mp.quad(integral, [0, mp.inf])
+
 mp.nprint(W,16)
